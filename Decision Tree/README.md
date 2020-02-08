@@ -1,1 +1,1 @@
-python DecisionTreeId3.py <car or bank>
+python DecisionTreeId3.py \<car or bank\>
