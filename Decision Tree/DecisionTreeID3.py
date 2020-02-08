@@ -46,12 +46,12 @@ def reading_Data_from_csv(CSVFile,given_order,given_numeric,given_unknow):
             index+=1
             data_from_csv.append(section)
         if given_numeric is not None:
+            #changing data to numeric
             data_from_csv
         if given_unknow is not None:
+            #chain
             data_from_csv
         return data_from_csv
-
-
 
 
 def main ():
@@ -65,10 +65,6 @@ def main ():
             given_attr, given_order, given_numeric, given_unknow = readAttributes("../Decision Tree/car/car_data.txt",False)
             train = reading_Data_from_csv("../Decision Tree/car/train.csv",given_order,given_numeric,given_unknow)
             test = reading_Data_from_csv("../Decision Tree/car/test.csv",given_order,given_numeric,given_unknow)
-
-
-
-
 
     except:
         print "python DecisionTreeID3.py <car or bank>"
