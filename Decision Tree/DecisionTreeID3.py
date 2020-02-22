@@ -56,7 +56,7 @@ def reading_Data_from_csv(CSVFile,given_order,given_numeric,given_unknow):
 
 def main ():
     try :
-        #if you want to choose b
+        #if you want to choose ba
         if sys.argv[1]=="bank":
            given_attr,given_order,given_numeric,given_unknow = readAttributes("../Decision Tree/bank/bank_data.txt", True)
            train = reading_Data_from_csv("../Decision Tree/bank/train.csv",given_order,given_numeric,given_unknow)
@@ -66,7 +66,7 @@ def main ():
             train = reading_Data_from_csv("../Decision Tree/car/train.csv",given_order,given_numeric,given_unknow)
             test = reading_Data_from_csv("../Decision Tree/car/test.csv",given_order,given_numeric,given_unknow)
 
-    except:
+    except Exception as e :
         print "python DecisionTreeID3.py <car or bank>"
 
 if __name__ == '__main__':
